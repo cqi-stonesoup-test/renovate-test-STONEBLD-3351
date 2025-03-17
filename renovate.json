@@ -12,9 +12,9 @@
         "^task/.*/patch\\.yaml$"
       ],
       "matchStrings": [
-        "image: (?:['\"])?(?<depName>[0-9a-z.-/]+)(:(?<currentValue>[^@]*))?@(?<currentDigest>sha256:[a-f0-9]{64})(?:['\"])?"
+        "tooling-image=(?:['\"])?(?<depName>[0-9a-z.-/]+)(:(?<currentValue>[^@]*))?@(?<currentDigest>sha256:[a-f0-9]{64})(?:['\"])?"
       ],
-      "autoReplaceStringTemplate": "image: {{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
+      "autoReplaceStringTemplate": "tooling-image={{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
       "datasourceTemplate": "docker"
     }
   ]
