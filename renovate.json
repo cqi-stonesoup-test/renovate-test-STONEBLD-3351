@@ -3,7 +3,6 @@
   "extends": [
     "config:base"
   ],
-  "baseBranches": ["STONEBLD-3351-update-renovate-config"],
   "dependencyDashboard": false,
   "prConcurrentLimit": 20,
   "customManagers": [
