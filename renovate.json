@@ -14,7 +14,7 @@
         "^task/.+/patch\\.yaml$"
       ],
       "matchStrings": [
-        "(?<prefix>image: |tooling-image=)(?:['\"])?(?<depName>[0-9a-z.\/-]+)(?::(?<currentValue>[0-9a-z.-]+))?@(?<currentDigest>sha256:[a-f0-9]{64})(?:['\"])?"
+        "(?:image: |tooling-image=)(?:['\"])?(?<depName>[0-9a-z.\/-]+)(?::(?<currentValue>[0-9a-z.-]+))?@(?<currentDigest>sha256:[a-f0-9]{64})(?:['\"])?"
       ],
       "datasourceTemplate": "docker"
     }
