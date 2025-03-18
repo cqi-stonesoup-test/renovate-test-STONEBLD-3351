@@ -9,7 +9,7 @@
     {
       "customType": "regex",
       "fileMatch": [
-        "^task/.*/recipe\\.txt$",
+        "^task/.*/recipe\\.yaml$",
         "^task/.*/recipe\\.txt$",
         "^task/.+/patch\\.yaml$"
       ],
